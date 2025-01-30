@@ -14,10 +14,78 @@ for(i=1;i<=10;i++){
 }
 
 // Write a program to print the multiplication table of 5 using a for loop.
-
+let num = prompt("Enter the number:");
+num = Number(num);
+let num1;
 for(j=1;j<=10;j++){
-    document.write()
+    document.write(num + " x " + j + " = " + (num * j) + "<br>");
 }
+
+// Write a program to calculate the sum of numbers from 1 to 10 using a while loop.
+i=1;
+let sum = 0;
+while(i<=10){
+     sum = sum+i;
+     i++;
+}
+document.write(sum);
+
+// Write a program to print numbers from 10 to 1 using a while loop.
+
+i=10;
+while(i>0){
+    document.write(i);
+    i--;
+}
+
+// Write a program to print numbers from 1 to 5 using a do...while loop
+i=1
+do{
+document.write(i);
+i++;
+}while(i<=5);
+
+// Write a program to calculate the factorial of a number using a do...while loop.
+
+let fac = prompt("Enter a number to calculate its factorial:");
+fac = Number(fac);
+
+let result = 1; 
+let i = fac;    
+
+do {
+    result *= i; 
+    i--; 
+} while (i > 0); 
+
+document.write("Factorial of " + fac + " is: " + result);
+
+// Write a program to print a pattern using nested for loops:
+
+for(i=1;i<=5;i++){
+    for(j=1;j<=i;j++){
+        document.write("*");
+    }
+}
+
+// Write a program to print numbers from 1 to 10, but skip the number 5 using the continue statement.
+for (let i = 1; i <= 10; i++) {
+    if (i == 5) {
+        continue;
+    }
+    console.log(i);
+}
+
+// Write a program to print numbers from 1 to 10, but stop the loop when the number is 7 using the break statement.
+
+for (let i = 1; i <= 10; i++) {
+    if (i == 5) {
+        break;
+    }
+    console.log(i);
+}
+
+
     </script>
 </body>
 </html>
